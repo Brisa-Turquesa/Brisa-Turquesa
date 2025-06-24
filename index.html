@@ -1,97 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brisa Marina - Santoña</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brisa Turquesa - Santoña</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Elephant&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background: #f3fdfd; color: #045a64; }
-    header { background: #7bd3d5; padding: 20px; text-align: center; }
-    header h1 { margin:0; color: #fff; font-size:2rem; }
-    nav a { margin: 0 10px; color: #fff; text-decoration: none; font-weight: bold; }
-    .gallery { display: flex; flex-wrap: wrap; gap:10px; padding:10px; justify-content:center; }
-    .gallery img { width: calc(50% - 10px); border-radius: 8px; max-width: 400px; }
-    .container { padding: 20px; max-width: 1000px; margin: auto; }
-    .buttons a { display:inline-block; margin:10px; padding:10px 20px;
-      background:#045a64; color:#fff; text-decoration:none; border-radius:5px;}
-    .amenities li { margin-bottom:5px; }
-    #map { width:100%; height:300px; border-radius:8px; margin:20px 0; }
-    #news article { margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid #ccc; }
-    footer { background:#7bd3d5; padding:10px; text-align:center; color:#fff; }
-    form { display: grid; gap: 10px; background: #e6f7f9; padding: 20px; border-radius: 10px; }
-    input, select, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    input[type="submit"] { background: #045a64; color: #fff; border: none; cursor: pointer; }
-    @media (max-width:600px){
-      .gallery img { width:100%; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0fcff;
+      color: #034f84;
+    }
+    header {
+      background: #6edcf7;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 2.5rem;
+      font-family: 'Elephant', serif;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery img {
+      width: calc(33% - 10px);
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #04a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #6edcf7;
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Brisa Marina</h1>
+    <h1>Brisa Turquesa</h1>
     <nav>
       <a href="#galeria">Galería</a>
-      <a href="#info">El Alojamiento</a>
-      <a href="#news">Noticias</a>
+      <a href="#noticias">Noticias</a>
       <a href="#contacto">Contacto</a>
+      <a href="#alojamiento">El Alojamiento</a>
     </nav>
   </header>
 
-  <section id="galeria" class="gallery">
-    <img src="img1.jpg" alt="Foto del alojamiento 1">
-    <img src="img2.jpg" alt="Foto del alojamiento 2">
-  </section>
-
-  <section id="info" class="container">
-    <h2>El Alojamiento</h2>
+  <section class="container" id="inicio">
+    <img src="santona.jpg" alt="Municipio de Santoña" style="width:100%; border-radius:8px;">
     <p>Lleva a toda la familia a este fantástico alojamiento que tiene un montón de espacio para divertirse. Muy céntrico para visitar Santoña cómodamente.</p>
-    <ul class="amenities">
-      <li>3 amplias habitaciones, una de ellas con terraza</li>
-      <li>Salón luminoso</li>
-      <li>Baño completo y aseo adicional</li>
-      <li>Cocina totalmente equipada</li>
-      <li>Cercano a estación de autobuses</li>
-      <li>Acceso a playas de Berria y San Martín</li>
-    </ul>
-    <div class="buttons">
-      <a href="https://www.airbnb.es/rooms/1392715508240573620" target="_blank">Ver en Airbnb</a>
-    </div>
-    <div id="map">
-      <iframe src="https://www.google.com/maps?q=Santoña,+Cantabria&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2927.503048914226!2d-3.454859684537822!3d43.44241307912951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd491b3f23984265%3A0x6e4a4b9f0debd39d!2sSanto%C3%B1a%2C%20Cantabria!5e0!3m2!1ses!2ses!4v1719235192872!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="container" id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="img1.jpg" alt="Imagen 1">
+      <img src="img2.jpg" alt="Imagen 2">
     </div>
   </section>
 
-  <section id="news" class="container">
-    <h2>Noticias y Actividades</h2>
+  <section class="container" id="noticias">
+    <h2>Noticias</h2>
     <article>
-      <h3>Festival del Bonito</h3>
-      <p>Vive la experiencia gastronómica más auténtica de Santoña en su famoso Festival del Bonito.</p>
+      <h3>Fiestas del Carmen 2025</h3>
+      <p>Las tradicionales fiestas del Carmen contarán con actividades para toda la familia del 14 al 16 de julio...</p>
     </article>
     <article>
-      <h3>Rutas de senderismo</h3>
-      <p>Descubre las espectaculares vistas del Monte Buciero con rutas para todos los niveles.</p>
+      <h3>Visitas guiadas al Monte Buciero</h3>
+      <p>Disfruta de una experiencia inolvidable recorriendo los paisajes naturales de Santoña. Inscripciones abiertas.</p>
     </article>
   </section>
 
-  <section id="contacto" class="container">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre y Apellidos" required>
-      <input type="tel" placeholder="Teléfono de contacto" required>
-      <select>
-        <option>Número de huéspedes</option>
-        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+  <section class="container" id="contacto">
+    <h2>Formulario de contacto</h2>
+    <form action="https://formspree.io/f/tu_form_id" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre y Apellidos" required>
+      <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+      <select name="huespedes" required>
+        <option value="">Número de huéspedes</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
       </select>
-      <input type="date" placeholder="Fecha de llegada">
-      <input type="date" placeholder="Fecha de salida">
-      <textarea rows="4" placeholder="Mensaje..."></textarea>
-      <input type="submit" value="Enviar">
+      <input type="date" name="fecha-inicio" required>
+      <input type="date" name="fecha-fin" required>
+      <textarea name="mensaje" rows="5" placeholder="Mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
+  <section class="container" id="alojamiento">
+    <h2>El Alojamiento</h2>
+    <p>3 amplias habitaciones, la principal con salida directa a una terraza con mesa y sillas, un luminoso salón, un baño completo con ducha, un aseo y una cocina equipada con nevera, congelador, vitrocerámica, cafetera, microondas y lavadora. Alojamiento situado próximo a la estación de autobuses. Con conexión directa y gratuita a la Playa de Berria durante los meses de verano. A 10 minutos andando de la Playa de San Martín y el Paseo Marítimo. A 3 minutos andando de la Plaza San Antonio, el centro del pueblo.</p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Brisa Marina - Santoña</p>
+    &copy; 2025 Brisa Turquesa - Santoña
   </footer>
 </body>
 </html>
